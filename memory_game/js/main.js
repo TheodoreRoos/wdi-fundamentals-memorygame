@@ -39,5 +39,11 @@ var flipCard = function (cardID) {
 	console.log(cards[cardID].cardImage);
 }
 
+var createBoard = function () {
+	for (i = 0; i < cards.length; i++) {
+		var newCard = document.createElement('img');
+		newCard.setAttribute('game-board', "images/back.png");
+}
+
 flipCard(0);
 flipCard(2);
